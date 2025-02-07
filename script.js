@@ -1,20 +1,20 @@
 document.getElementById("image1").addEventListener("click", function () {
-    handleClick("image1", "image2");
+    Click("image1", "image2");
 });
 
 document.getElementById("image2").addEventListener("click", function () {
-    handleClick("image2", "image1");
+    Click("image2", "image1");
 });
 
-function handleClick(selectedId, hiddenId) {
+function Click(selectedId, hiddenId) {
     document.getElementById(hiddenId).classList.add("hidden");
     document.getElementById(selectedId).classList.add("selected");
     document.getElementById("button-container").style.display = "block";
 }
 
-function changePerspective(perspective) {
+function cambiarPerspectiva(perspectiva) {
     let selectedImage = document.querySelector(".selected");
-    selectedImage.src = `./Imegenes/${selectedImage.id}_${perspective}.png`;
+    selectedImage.src = `./Imegenes/${selectedImage.id}_${perspectiva}.png`;
 }
 
 function reset() {
