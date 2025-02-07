@@ -17,7 +17,7 @@ function cambiarPerspectiva(perspectiva) {
     selectedImage.src = `./Imegenes/${selectedImage.id}_${perspectiva}.png`;
 }
 
-function reset() {
+function reiniciar() {
     document.getElementById("image1").src = "./Imegenes/image1_de_frente.png";
     document.getElementById("image1").classList.remove("hidden", "selected");
     document.getElementById("image2").src = "./Imegenes/image2_de_frente.png";
