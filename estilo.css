@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.image {
+    width: 45%;
+    height: 50%;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.selected {
+    width: 90%;
+}
+
+.button-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
